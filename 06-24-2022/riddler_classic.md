@@ -17,7 +17,7 @@ We only left out the case where each goat prefers a different floor, where switc
 
 Thus, the probability that each goat ends up on its own floor in $1/2*(1 + P(\lvert\{f(g), g \in GOAT\}\rvert = 10))$.
 
-Because, $\lvert\{f(g), g \in GOAT\}\vert = 10!$, we found that $P(\lvert\{f(g), g \in GOAT\}\rvert = 10) = 10!/10^{10}$.
+There are $10!$ ways of assigning one different floor to each goat, thus $P(\lvert\{f(g), g \in GOAT\}\rvert = 10) = 10!/10^{10}$.
 
 Thus, our final answer is $$\boxed{1/2 + \frac{10!}{2*10^{10}}}$$
 

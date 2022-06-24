@@ -9,15 +9,15 @@
 For each goat $g$, let $f(g)$ be the random varaible corresponding to its preferred floor.
 
 It is easy to see that each goat has its own floor iff <br>
-$$ \forall i \in [1,10], \#\{g, f(g) > i\} \leq 10 -i$$
+$$ \forall i \in [1,10], \lvert\{g, f(g) > i\}\rvert \leq 10 -i$$
 
 By symmetry, for each event that satisfies the condition above, there is an event of equal probability that doesn't satisfy it where each goat $g$ has a preferred floor of  $11 - f(g)$.
 
 We only left out the case where each goat prefers a different floor, where switching the floors like above still results in a situation where each goat has its own floor.
 
-Thus, the probability that each goat ends up on its own floor in $1/2 + P(\#\{f(g), g \in GOAT\} = 10)$.
+Thus, the probability that each goat ends up on its own floor in $1/2 + P(\lvert\{f(g), g \in GOAT\}\rvert = 10)$.
 
-Because, $\#\{f(g), g \in GOAT\} = 10!$, $P(\#\{f(g), g \in GOAT\} = 10) = 10!/10^{10}$.
+Because, $\lvert\{f(g), g \in GOAT\}\vert = 10!$, we found that $P(\lvert\{f(g), g \in GOAT\}\rvert = 10) = 10!/10^{10}$.
 
 Thus, our final answer is $$\boxed{1/2 + 10!/10^{10}}$$
 

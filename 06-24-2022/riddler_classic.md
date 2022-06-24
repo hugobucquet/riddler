@@ -15,11 +15,11 @@ By symmetry, for each event that satisfies the condition above, there is an even
 
 We only left out the case where each goat prefers a different floor, where switching the floors like above still results in a situation where each goat has its own floor.
 
-Thus, the probability that each goat ends up on its own floor in $1/2 + P(\lvert\{f(g), g \in GOAT\}\rvert = 10)$.
+Thus, the probability that each goat ends up on its own floor in $1/2*(1 + P(\lvert\{f(g), g \in GOAT\}\rvert = 10))$.
 
 Because, $\lvert\{f(g), g \in GOAT\}\vert = 10!$, we found that $P(\lvert\{f(g), g \in GOAT\}\rvert = 10) = 10!/10^{10}$.
 
-Thus, our final answer is $$\boxed{1/2 + 10!/10^{10}}$$
+Thus, our final answer is $$\boxed{1/2 + \frac{10!}{2*10^{10}}}$$
 
 
 
